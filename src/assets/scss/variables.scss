@@ -1,0 +1,12 @@
+/* fonts */
+
+$accent-font: 'MyriadPro-BoldIt';
+$second-font: 'MyriadPro-Italic';
+
+
+@mixin accent-color {
+	background: rgb(149,55,243);
+	background: linear-gradient(135deg, rgba(149,55,243,1) 23.12%, rgba(19,156,255,1) 50.01%, rgba(105,96,250,1) 73.04%, rgba(210,25,242,1) 89.25%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}

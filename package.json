@@ -1,0 +1,38 @@
+{
+    "name": "KaraokeQuiz",
+    "main": "electron.js",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build --dest ./dist/vue",
+        "lint": "vue-cli-service lint",
+        "electron": "cross-env NODE_ENV=debug electron .",
+        "electron-build": "cross-env NODE_ENV=production electron-packager . --overwrite --out='./dist/electron' --ignore='debugData' --ignore='[a-zA-Z0-9\\-_]\\.config' --ignore='\\.browserslistrc' --ignore='\\.eslintrc' --ignore='\\.gitignore' --ignore='package-lock\\.json' --ignore='src' --ignore='public'"
+    },
+    "dependencies": {
+        "babel-helper-vue-jsx-merge-props": "^2.0.3",
+        "core-js": "^3.3.2",
+        "diskdb": "^0.1.17",
+        "md5": "^2.2.1",
+        "vue": "^2.6.10",
+        "vue-nav-tabs": "^0.5.7",
+        "vuex": "^3.0.1"
+    },
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "^4.0.0",
+        "@vue/cli-plugin-eslint": "^4.0.0",
+        "@vue/cli-plugin-vuex": "^4.0.0",
+        "@vue/cli-service": "^4.0.0",
+        "babel-eslint": "^10.0.3",
+        "cross-env": "^6.0.3",
+        "electron": "^7.0.0",
+        "electron-packager": "^14.1.0",
+        "eslint": "^5.16.0",
+        "eslint-plugin-vue": "^5.0.0",
+        "node-sass": "^4.13.0",
+        "sass-loader": "^8.0.0",
+        "sass-resources-loader": "^2.0.1",
+        "vue-template-compiler": "^2.6.10"
+    }
+}
